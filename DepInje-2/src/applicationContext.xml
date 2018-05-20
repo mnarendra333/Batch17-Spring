@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<!-- depencies -->
+
+	<bean id="mobile" class="com.pragim.batch17.Mobile">
+	
+		<constructor-arg index="0" value="Samsung"/>
+		<constructor-arg index="1" value="s5" />
+		
+		
+	
+	</bean>
+	<bean id="computer" class="com.pragim.batch17.Computer"/>
+	
+	
+	
+	<bean id="person" class="com.pragim.batch17.Person">
+		<constructor-arg ref="mobile"></constructor-arg>
+	
+	</bean> 
+</beans>
