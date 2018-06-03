@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="1" name="com.pragim.SpringJdbcBasicApp.AppTest">
+<testsuite failures="0" time="0.004" errors="0" skipped="0" tests="1" name="com.pragim.SpringJdbcBasicApp.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="D:\batch17\hibernate_ws\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8115552894850315777.tmp"/>
+    <property name="classworlds.conf" value="D:\batch17\hibernate_ws\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4777914369752172915.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\softwares\java_frameworks\maven\apache-maven-3.5.0\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\softwares\java_frameworks\maven\apache-maven-3.5.0\bin;C:\Users\sapuser\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;D:\softwares\java_frameworks\spring-tool-suite-3.6.4.RELEASE-e4.4.2-win32-x86_64\sts-bundle\sts-3.6.4.RELEASE;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\softwares\java_frameworks\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;C:\Users\sapuser\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;D:\softwares\java_frameworks\spring-tool-suite-3.6.4.RELEASE-e4.4.2-win32-x86_64\sts-bundle\sts-3.6.4.RELEASE;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.005" classname="com.pragim.SpringJdbcBasicApp.AppTest" name="testApp"/>
+  <testcase time="0.004" classname="com.pragim.SpringJdbcBasicApp.AppTest" name="testApp"/>
 </testsuite>
