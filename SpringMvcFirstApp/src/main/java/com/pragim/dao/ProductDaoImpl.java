@@ -6,13 +6,15 @@ import javax.transaction.Transactional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.pragim.model.Product;
 
-
+@Repository
 public class ProductDaoImpl implements ProductDao {
 	
-	
+	@Autowired
 	private SessionFactory factory;
 	
 	@Override

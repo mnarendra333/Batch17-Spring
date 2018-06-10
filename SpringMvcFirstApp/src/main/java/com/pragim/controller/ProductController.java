@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServlet;
 
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,20 +18,22 @@ import com.pragim.service.ProductService;
 @Controller
 public class ProductController {
 	
-	
-	
-	private ProductService service;
+	private static final Logger logger = Logger.getLogger(ProductController.class);
+	@Autowired
+	private ProductService productService;
 	
 	
 	public void setService(ProductService service) {
-		this.service = service;
+		this.productService = service;
 	}
 
 
 	@RequestMapping("/getproducts")
 	public String getAllProuducts(Model model){
 		
-		List<Product> listOfProducts = service.getAllProuducts();
+		logger.info("inside -> getAllProuducts");
+		
+		List<Product> listOfProducts = productService.getAllProuducts();
 		model.addAttribute("prolist", listOfProducts);
 		return "products";
 	}
@@ -38,7 +42,7 @@ public class ProductController {
 	@RequestMapping("/editproduct")
 	public String editProduct(Model model,@RequestParam(name="id") String id){
 		
-		List<Product> listOfProducts = service.getAllProuducts();
+		List<Product> listOfProducts = productService.getAllProuducts();
 		model.addAttribute("prolist", listOfProducts);
 		return "products";
 	}
@@ -46,7 +50,7 @@ public class ProductController {
 	@RequestMapping("/deleteproduct")
 	public String deleteProduct(Model model,@RequestParam(name="id") String id){
 		
-		service.deleteProduct(id);
+		productService.deleteProduct(id);
 		return "redirect:getproducts";
 	}
 	
@@ -64,7 +68,7 @@ public class ProductController {
 	public String saveProduct(@ModelAttribute Product product){
 		
 		Product obj = new Product();
-		service.saveProduct(product);
+		productService.saveProduct(product);
 		//model.addAttribute("product", obj);
 		//service.deleteProduct(id);
 		return "redirect:getproducts";

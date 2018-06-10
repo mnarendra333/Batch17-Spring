@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 	
-	<context:component-scan base-package="com.pragim.controller"/>
+	<context:component-scan base-package="com.pragim"/>
 
 	<context:annotation-config/>
 
@@ -57,7 +57,7 @@
     
     
     
-    <bean id="productController" class="com.pragim.controller.ProductController">
+   <!--  <bean id="productController" class="com.pragim.controller.ProductController">
     
     	<property name="service" ref="proService"/>
     
@@ -71,6 +71,6 @@
     <bean id="proDao" class="com.pragim.dao.ProductDaoImpl">
     
     	<property name="factory" ref="sessionFactory"></property>
-    </bean>
+    </bean> -->
 
 </beans>

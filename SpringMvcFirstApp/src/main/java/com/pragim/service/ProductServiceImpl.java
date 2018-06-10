@@ -2,22 +2,26 @@ package com.pragim.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.pragim.dao.ProductDao;
 import com.pragim.model.Product;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 	
-	
-	private ProductDao dao;
+	@Autowired
+	private ProductDao productDao;
 
 	public void setDao(ProductDao dao) {
-		this.dao = dao;
+		this.productDao = dao;
 	}
 
 	@Override
 	public List<Product> getAllProuducts() {
 		// TODO Auto-generated method stub
-		return dao.getAllProuducts();
+		return productDao.getAllProuducts();
 	}
 
 	@Override
@@ -25,14 +29,14 @@ public class ProductServiceImpl implements ProductService {
 		// TODO Auto-generated method stub
 		
 		int proId = Integer.parseInt(id);
-		dao.deleteProduct(proId);
+		productDao.deleteProduct(proId);
 		return "success";
 	}
 
 	@Override
 	public String saveProduct(Product product) {
 		// TODO Auto-generated method stub
-		dao.saveProduct(product);
+		productDao.saveProduct(product);
 		return "success";
 	}
 
